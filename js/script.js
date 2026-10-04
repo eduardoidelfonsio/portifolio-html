@@ -10,18 +10,38 @@ const DATA = {
 
   name: "José Eduardo",
 
-  role: "Estudante de Sistemas de Informação | Desenvolvedor em formação",
+  role: "Estudante de Sistemas de Informação",
+
+  meta: "4º semestre • IFCE – Campus Crato",
+
+  description: "Focado em Python, SQL e desenvolvimento de projetos próprios.",
 
   heroTech: ["Python", "SQL", "Git", "HTML", "CSS"],
 
-  description:
-    "Estudante de Sistemas de Informação no IFCE – Campus Crato, com interesse em desenvolvimento de software, bancos de dados e criação de projetos práticos.",
-
+  /* PLACEHOLDER: FOTO DE PERFIL — coloque sua foto e ajuste o caminho.
+     Sem arquivo, o site mostra suas iniciais. */
   avatar: "assets/eu.jpg",
 
-  trainerLevel: "4º semestre",
 
-  xpPercent: 40,
+  /* ---- Pokémon / imagens (PLACEHOLDERS) ----
+     Coloque seus arquivos em assets/images/ e escreva o caminho aqui.
+     Deixe "" para não mostrar nada. Você escolhe quais Pokémon usar. */
+
+  pokemon: {
+    pokeball: "",      // PLACEHOLDER: POKEBOLA — ex.: "assets/images/pokebola.png" (vazio = pokébola desenhada em CSS)
+    sprites: {         // PLACEHOLDER: SPRITE POKEMON / PIXEL ART — salve com estes nomes (ou troque o caminho)
+      home: "assets/images/pokemon/sprite-home.png",
+      skills: "assets/images/pokemon/sprite-skills.png",
+      projects: "assets/images/pokemon/sprite-projects.png",
+      contact: "assets/images/pokemon/sprite-contact.png"
+    },
+    balls: {           // texto que aparece ao clicar em cada pokébola (edite à vontade)
+      about: "Foco atual: Python, SQL/MySQL, Git/GitHub, web, algoritmos e estruturas de dados.",
+      projects: "Projetos próprios para praticar Python, CRUD, banco de dados e web.",
+      footer: "Fim da rota. Se algum projeto te interessou, fala comigo."
+    },
+    toastKonami: "Código Konami! Um Pokémon selvagem apareceu."
+  },
 
 
   /* ---- Navegação ---- */
@@ -29,7 +49,7 @@ const DATA = {
   nav: [
     ["home", "Início"],
     ["sobre", "Sobre"],
-    ["habilidades", "Habilidades"],
+    ["habilidades", "Tecnologias"],
     ["experiencia", "Experiência"],
     ["projetos", "Projetos"],
     ["formacao", "Formação"],
@@ -40,11 +60,11 @@ const DATA = {
   /* ---- Sobre mim ---- */
 
   about: [
-    "Curso Sistemas de Informação no IFCE – Campus Crato e estou no 4º semestre.",
+    "Sou estudante de Sistemas de Informação no IFCE – Campus Crato e atualmente estou no 4º semestre. Tenho estudado principalmente Python, SQL, bancos de dados e desenvolvimento web, sempre tentando transformar o que aprendo em projetos próprios.",
 
-    "Tenho interesse principalmente em desenvolvimento de software, programação e bancos de dados.",
+    "O principal deles é o Central Estudos, um aplicativo desktop com Python, PySide6 e SQLite que estou criando para organizar meus estudos da faculdade.",
 
-    "Busco transformar o conhecimento adquirido na faculdade em projetos práticos e continuar desenvolvendo minhas habilidades na área de tecnologia."
+    "Também tenho experiência prática com computadores: manutenção, formatação, instalação de sistemas e programas, montagem e diagnóstico de problemas, além de aulas de informática."
   ],
 
   aboutTags: [
@@ -62,146 +82,24 @@ const DATA = {
      */
 
   skills: [
+    /* Cada item: type (categoria), icon, name e desc (frase curta, opcional). */
 
-    /* Programação */
-
-    {
-      type: "Programação",
-      icon: "🐍",
-      name: "Python",
-      level: 7,
-      rank: "Intermediário"
-    },
-
-    {
-      type: "Programação",
-      icon: "☕",
-      name: "Java",
-      level: 5,
-      rank: "Básico / Intermediário"
-    },
-
-    {
-      type: "Programação",
-      icon: "🌐",
-      name: "HTML",
-      level: 5,
-      rank: "Básico / Intermediário"
-    },
-
-    {
-      type: "Programação",
-      icon: "🎨",
-      name: "CSS",
-      level: 5,
-      rank: "Básico / Intermediário"
-    },
-
-
-    /* Banco de dados */
-
-    {
-      type: "Banco de dados",
-      icon: "🗄️",
-      name: "SQL",
-      level: 7,
-      rank: "Intermediário"
-    },
-
-    {
-      type: "Banco de dados",
-      icon: "🐬",
-      name: "MySQL",
-      level: 7,
-      rank: "Intermediário"
-    },
-
-    {
-      type: "Banco de dados",
-      icon: "🪶",
-      name: "SQLite",
-      level: 7,
-      rank: "Intermediário"
-    },
-
-    {
-      type: "Banco de dados",
-      icon: "🦭",
-      name: "MariaDB",
-      level: 5,
-      rank: "Básico / Intermediário"
-    },
-
-
-    /* Ferramentas */
-
-    {
-      type: "Ferramentas",
-      icon: "🔀",
-      name: "Git",
-      level: 4,
-      rank: "Básico"
-    },
-
-    {
-      type: "Ferramentas",
-      icon: "🐙",
-      name: "GitHub",
-      level: 4,
-      rank: "Básico"
-    },
-
-    {
-      type: "Ferramentas",
-      icon: "🧩",
-      name: "VS Code",
-      level: 7,
-      rank: "Intermediário"
-    },
-
-    {
-      type: "Ferramentas",
-      icon: "🐧",
-      name: "Linux",
-      level: 6,
-      rank: "Intermediário"
-    },
-
-    {
-      type: "Ferramentas",
-      icon: "🪟",
-      name: "Windows",
-      level: 6,
-      rank: "Intermediário"
-    },
-
-
-    /* Outras */
-
-    {
-      type: "Outras",
-      icon: "📊",
-      name: "Excel",
-      level: 5,
-      rank: "Básico / Intermediário"
-    },
-
-    {
-      type: "Outras",
-      icon: "📝",
-      name: "Word",
-      level: 4,
-      rank: "Básico"
-    },
-
-    {
-      type: "Outras",
-      icon: "🔧",
-      name: "Manutenção de computadores",
-      level: 7,
-      rank: "Intermediário"
-    }
-
+    { type: "Programação", icon: "🐍", name: "Python", desc: "Desenvolvimento de aplicações, funções, estruturas de dados e CRUD." },
+    { type: "Programação", icon: "☕", name: "Java", desc: "" },
+    { type: "Programação", icon: "📜", name: "JavaScript", desc: "Usado neste portfólio." },
+    { type: "Programação", icon: "🎨", name: "HTML / CSS", desc: "Estrutura e estilização de páginas web." },
+    { type: "Banco de dados", icon: "🗄️", name: "SQL / MySQL", desc: "Consultas, CRUD, relacionamentos e bancos de dados." },
+    { type: "Banco de dados", icon: "🪶", name: "SQLite", desc: "Usado no Central Estudos e no ContaUp." },
+    { type: "Banco de dados", icon: "🦭", name: "MariaDB", desc: "Usado no Sistema de Assistência Técnica." },
+    { type: "Ferramentas", icon: "🔀", name: "Git / GitHub", desc: "Versionamento e organização de projetos." },
+    { type: "Ferramentas", icon: "🧩", name: "VS Code", desc: "" },
+    { type: "Ferramentas", icon: "🐧", name: "Linux", desc: "" },
+    { type: "Ferramentas", icon: "🪟", name: "Windows", desc: "" },
+    { type: "Conceitos", icon: "🧠", name: "Algoritmos", desc: "" },
+    { type: "Conceitos", icon: "🧱", name: "Estruturas de dados", desc: "" },
+    { type: "Outras", icon: "📊", name: "Excel", desc: "" },
+    { type: "Outras", icon: "📝", name: "Word", desc: "" },
+    { type: "Outras", icon: "🔧", name: "Manutenção de computadores", desc: "Formatação, instalação de sistemas e programas, drivers, limpeza, montagem e diagnóstico." },
   ],
 
 
@@ -209,15 +107,19 @@ const DATA = {
 
   experience: [
 
+    /* Campos vazios ("") não aparecem no site. Preencha quando quiser. */
     {
       when: "2023 — atual",
-
       title: "Manutenção de computadores",
-
       place: "Atuação autônoma",
+      text: "Atuação com manutenção e suporte básico em computadores, incluindo formatação, instalação de sistemas e programas, drivers, limpeza, montagem, desmontagem e diagnóstico de problemas."
+    },
 
-      text:
-        "Atuação sob demanda com formatação, instalação do Windows e programas, configuração de drivers, limpeza e manutenção física, montagem e desmontagem de computadores e diagnóstico de problemas."
+    {
+      when: "",   // PREENCHER: período
+      title: "Aulas de informática",
+      place: "",   // PREENCHER: onde/para quem (opcional)
+      text: "Experiência com aulas de informática."
     }
 
   ],
@@ -228,60 +130,60 @@ const DATA = {
   projects: [
 
     {
-      name: "ContaUp",
-
-      status: "Projeto pessoal",
-
-      desc:
-        "Aplicação de controle financeiro desenvolvida para registrar e organizar receitas e despesas.",
-
-      tech: [
-        "Python",
-        "SQLite"
-      ],
-
-      github: "",
-
-      demo: ""
+      name: "Central Estudos",
+      status: "Em desenvolvimento",
+      desc: "Aplicativo desktop criado para organizar meus estudos da faculdade.",
+      tech: ["Python", "PySide6", "SQLite"],
+      featured: true,
+      note: "matérias, estudos, flashcards e organização acadêmica.",
+      image: "assets/images/projects/central-estudos.png",   // PLACEHOLDER: SCREENSHOT DO PROJETO (sem arquivo, aparece um espaço reservado)
+      github: "",   // PREENCHER: link do repositório
+      demo: ""      // PREENCHER: link da demonstração
     },
 
+    {
+      name: "ContaUp",
+      status: "Projeto pessoal",
+      desc: "Aplicação de controle financeiro para registrar e organizar receitas e despesas.",
+      tech: ["Python", "SQLite"],
+      featured: false,
+      image: "assets/images/projects/contaup.png",   // PLACEHOLDER: SCREENSHOT DO PROJETO (sem arquivo, aparece um espaço reservado)
+      github: "",   // PREENCHER: link do repositório
+      demo: ""      // PREENCHER: link da demonstração
+    },
 
     {
       name: "Sistema de Assistência Técnica",
-
       status: "Em desenvolvimento",
-
-      desc:
-        "Sistema para gerenciamento de uma assistência técnica, com cadastro de clientes, equipamentos e serviços.",
-
-      tech: [
-        "Python",
-        "MariaDB"
-      ],
-
-      github: "",
-
-      demo: ""
+      desc: "Sistema para gerenciar uma assistência técnica: clientes, equipamentos e serviços.",
+      tech: ["Python", "MariaDB"],
+      featured: false,
+      image: "assets/images/projects/assistencia-tecnica.png",   // PLACEHOLDER: SCREENSHOT DO PROJETO (sem arquivo, aparece um espaço reservado)
+      github: "",   // PREENCHER: link do repositório
+      demo: ""      // PREENCHER: link da demonstração
     },
-
 
     {
       name: "Loja de Games",
-
       status: "Projeto pessoal",
+      desc: "Projeto web para praticar a estruturação e a estilização de páginas.",
+      tech: ["HTML", "CSS"],
+      featured: false,
+      image: "assets/images/projects/loja-games.png",   // PLACEHOLDER: SCREENSHOT DO PROJETO (sem arquivo, aparece um espaço reservado)
+      github: "",   // PREENCHER: link do repositório
+      demo: ""      // PREENCHER: link da demonstração
+    },
 
-      desc:
-        "Projeto web desenvolvido para praticar estruturação de páginas, organização de conteúdo e estilização.",
-
-      tech: [
-        "HTML",
-        "CSS"
-      ],
-
-      github: "",
-
-      demo: ""
-    }
+    {
+      name: "Meu Portfólio",
+      status: "Publicado",
+      desc: "Este portfólio, feito para apresentar meus projetos e minha evolução na área de tecnologia.",
+      tech: ["HTML", "CSS", "JavaScript"],
+      featured: false,
+      image: "assets/images/projects/portfolio.png",   // PLACEHOLDER: SCREENSHOT DO PROJETO (sem arquivo, aparece um espaço reservado)
+      github: "",   // PREENCHER: link do repositório
+      demo: ""      // PREENCHER: link da demonstração
+    },
 
   ],
 
@@ -364,8 +266,6 @@ const esc = s =>
     }[c])
   );
 
-const isPlaceholder = s =>
-  /\[EDITE\]|\[EXEMPLO\]/.test(s);
 
 
 /* =========================================================
@@ -373,58 +273,19 @@ const isPlaceholder = s =>
    ========================================================= */
 
 function renderHome() {
-
-  document.title = `${DATA.name} | Portfólio`;
-
+  document.title = `${DATA.name} | Estudante de Sistemas de Informação`;
   $("brand").textContent = DATA.name;
-
   $("hero-name").textContent = DATA.name;
-
   $("hero-role").textContent = DATA.role;
-
+  $("hero-meta").textContent = DATA.meta;
   $("hero-desc").textContent = DATA.description;
-
-  $("hero-tech").innerHTML =
-    DATA.heroTech
-      .map(t => `<span class="chip">${esc(t)}</span>`)
-      .join("");
-
-  $("t-name").textContent = DATA.name;
-
-  $("t-level").textContent = DATA.trainerLevel;
-
-  const initials = DATA.name
-    .split(" ")
-    .map(w => w[0])
-    .slice(0, 2)
-    .join("");
-
-  $("avatar").innerHTML =
-    DATA.avatar
-      ? `<img src="${esc(DATA.avatar)}" alt="Foto de ${esc(DATA.name)}">`
-      : esc(initials);
-
-  const certs =
-    DATA.education.filter(e => e.kind !== "Formação").length;
-
-  const stats = [
-    ["Tecnologias", DATA.skills.length],
-    ["Projetos", DATA.projects.length],
-    ["Experiências", DATA.experience.length],
-    ["Cursos e certificações", certs]
-  ];
-
-  $("stats").innerHTML =
-    stats
-      .map(([k, v]) =>
-        `<div><dt>${k}</dt><dd>${v}</dd></div>`
-      )
-      .join("");
-
-  setTimeout(
-    () => $("xp-fill").style.width = DATA.xpPercent + "%",
-    300
-  );
+  $("hero-tech").innerHTML = DATA.heroTech.map(t => `<span class="chip">${esc(t)}</span>`).join("");
+  const gh = DATA.contact.find(c => c.label === "GitHub");
+  if (gh) $("btn-github").href = gh.url; else $("btn-github").remove();
+  const initials = DATA.name.split(" ").map(w => w[0]).slice(0, 2).join("");
+  $("avatar").innerHTML = DATA.avatar
+    ? `<img src="${esc(DATA.avatar)}" alt="Foto de ${esc(DATA.name)}" onerror="this.parentNode.textContent='${esc(initials)}'">`
+    : esc(initials);
 }
 
 
@@ -448,143 +309,29 @@ function renderAbout() {
 
 
 /* =========================================================
-   HABILIDADES
+   TECNOLOGIAS
    ========================================================= */
 
 function renderSkills(filter = "Todas") {
-
-  const cats = [
-    "Todas",
-    ...new Set(DATA.skills.map(s => s.type))
-  ];
-
-  $("tabs").innerHTML =
-    cats
-      .map(c =>
-        `<button
-          class="${c === filter ? "on" : ""}"
-          data-c="${esc(c)}"
-        >
-          ${esc(c)}
-        </button>`
-      )
-      .join("");
-
-  $("tabs")
-    .querySelectorAll("button")
-    .forEach(
-      b => b.onclick = () => renderSkills(b.dataset.c)
-    );
-
-  $("skills").innerHTML =
-    DATA.skills
-      .filter(
-        s =>
-          filter === "Todas" ||
-          s.type === filter
-      )
-      .map(s => {
-
-        const lv =
-          Number.isInteger(s.level)
-            ? Math.max(0, Math.min(10, s.level))
-            : null;
-
-        const pips =
-          Array
-            .from(
-              { length: 10 },
-              (_, i) =>
-                `<i class="${lv !== null && i < lv ? "f" : ""}"></i>`
-            )
-            .join("");
-
-        const label =
-          lv !== null
-            ? `Lv. ${lv}${s.rank ? " · " + s.rank : ""}`
-            : (s.rank || "Nível a definir");
-
-        return `
-          <article class="card glass skill">
-
-            <div class="row">
-
-              <span
-                class="icon"
-                aria-hidden="true"
-              >
-                ${s.icon}
-              </span>
-
-              <div>
-
-                <h3>
-                  ${esc(s.name)}
-                </h3>
-
-                <p class="cat">
-                  ${esc(s.type)}
-                </p>
-
-              </div>
-
-            </div>
-
-            <div
-              class="pips"
-              aria-hidden="true"
-            >
-              ${pips}
-            </div>
-
-            <div class="lv">
-              ${esc(label)}
-            </div>
-
-          </article>
-        `;
-
-      })
-      .join("");
+  const cats = ["Todas", ...new Set(DATA.skills.map(s => s.type))];
+  $("tabs").innerHTML = cats.map(c => `<button class="${c === filter ? "on" : ""}" data-c="${esc(c)}">${esc(c)}</button>`).join("");
+  $("tabs").querySelectorAll("button").forEach(b => b.onclick = () => renderSkills(b.dataset.c));
+  $("skills").innerHTML = DATA.skills.filter(s => filter === "Todas" || s.type === filter).map(s =>
+    `<article class="card glass skill">
+      <div class="row"><span class="icon" aria-hidden="true">${s.icon}</span>
+        <div><h3>${esc(s.name)}</h3><p class="cat">${esc(s.type)}</p></div></div>
+      ${s.desc ? `<p class="d">${esc(s.desc)}</p>` : ""}</article>`).join("");
 }
 
 
 /* =========================================================
-   EXPERIÊNCIA
+   EXPERIÊNCIA (campos vazios não aparecem)
    ========================================================= */
 
 function renderTimeline() {
-
-  $("timeline").innerHTML =
-    DATA.experience
-      .map(e =>
-        `<li>
-
-          <div class="card glass ${isPlaceholder(e.when + e.text) ? "placeholder" : ""}">
-
-            <h3>
-              ${esc(e.title)}
-            </h3>
-
-            ${
-              e.place
-                ? `<p class="place">${esc(e.place)}</p>`
-                : ""
-            }
-
-            <span class="when">
-              ${esc(e.when)}
-            </span>
-
-            <p>
-              ${esc(e.text)}
-            </p>
-
-          </div>
-
-        </li>`
-      )
-      .join("");
+  $("timeline").innerHTML = DATA.experience.map(e => `<li><div class="card glass">
+    <h3>${esc(e.title)}</h3>${e.place ? `<p class="place">${esc(e.place)}</p>` : ""}
+    ${e.when ? `<span class="when">${esc(e.when)}</span>` : ""}${e.text ? `<p>${esc(e.text)}</p>` : ""}</div></li>`).join("");
 }
 
 
@@ -593,56 +340,58 @@ function renderTimeline() {
    ========================================================= */
 
 function renderProjects() {
+  const btn = (label, url) => url
+    ? `<a class="btn" href="${esc(url)}" target="_blank" rel="noopener">${label}</a>`
+    : `<span class="btn off" aria-disabled="true">${label}</span>`;
+  $("projects").innerHTML = DATA.projects.map(p => `<article class="card glass project${p.featured ? " featured" : ""}">
+    <div class="shot"><span>Captura de tela em breve</span>${p.image ? `<img src="${esc(p.image)}" alt="Captura de tela de ${esc(p.name)}" loading="lazy" onerror="this.remove()">` : ""}</div>
+    <div class="pbody"><span class="status">Status: ${esc(p.status)}</span>
+      <h3>${esc(p.name)}</h3><p>${esc(p.desc)}</p>
+      ${p.note ? `<p class="learned"><b>Recursos:</b> ${esc(p.note)}</p>` : ""}
+      <div class="tech">${p.tech.map(esc).join(" • ")}</div>
+      <div class="actions">${btn("GitHub", p.github)}${btn("Demo", p.demo)}</div></div></article>`).join("");
+}
 
-  const btn = (label, url) =>
-    url
-      ? `<a
-          class="btn"
-          href="${esc(url)}"
-          target="_blank"
-          rel="noopener"
-        >
-          ${label}
-        </a>`
 
-      : `<span
-          class="btn off"
-          aria-disabled="true"
-        >
-          ${label}
-        </span>`;
+/* =========================================================
+   POKÉMON: pokébolas, sprites e easter eggs (discretos)
+   ========================================================= */
 
-  $("projects").innerHTML =
-    DATA.projects
-      .map(p =>
-        `<article
-          class="card glass project ${isPlaceholder(p.name) ? "placeholder" : ""}"
-        >
+function initPokemon() {
+  const P = DATA.pokemon, toast = $("toast"); let timer;
+  const say = msg => { toast.textContent = msg; toast.classList.add("on"); clearTimeout(timer); timer = setTimeout(() => toast.classList.remove("on"), 3800); };
 
-          <span class="status">
-            Status: ${esc(p.status)}
-          </span>
+  // Pokébolas clicáveis (posições marcadas com data-ball no HTML)
+  document.querySelectorAll("[data-ball]").forEach(slot => {
+    const msg = P.balls[slot.dataset.ball]; if (!msg) return;
+    slot.innerHTML = `<button class="ball" type="button" aria-label="Curiosidade">${P.pokeball ? `<img src="${esc(P.pokeball)}" alt="">` : ""}</button>`;
+    slot.firstChild.onclick = e => { const b = e.currentTarget; b.classList.remove("pop"); void b.offsetWidth; b.classList.add("pop"); say(msg); };
+  });
 
-          <h3>
-            ${esc(p.name)}
-          </h3>
+  // Sprites escondidos: só existem se você definir o caminho em DATA.pokemon.sprites
+  document.querySelectorAll(".sprite").forEach(box => {
+    const src = P.sprites[box.dataset.slot]; if (!src) return;
+    box.innerHTML = `<img src="${esc(src)}" alt="" loading="lazy" onerror="this.parentNode.remove()">`;
+    box.onclick = () => { box.classList.remove("hop"); void box.offsetWidth; box.classList.add("hop"); };
+    new IntersectionObserver((en, o) => { if (en[0].isIntersecting) { box.classList.add("seen"); o.disconnect(); } }, { threshold: .3 })
+      .observe(box.closest("section"));
+  });
 
-          <p>
-            ${esc(p.desc)}
-          </p>
+  // Easter egg 1: código Konami (↑ ↑ ↓ ↓ ← → ← → B A) revela todos os sprites
+  const code = ["ArrowUp","ArrowUp","ArrowDown","ArrowDown","ArrowLeft","ArrowRight","ArrowLeft","ArrowRight","b","a"]; let pos = 0;
+  addEventListener("keydown", e => {
+    pos = e.key === code[pos] ? pos + 1 : (e.key === code[0] ? 1 : 0);
+    if (pos === code.length) { pos = 0; document.body.classList.toggle("party"); say(P.toastKonami); }
+  });
+  // Easter egg 2: mensagem para quem abre o console
+  console.log("%cJosé Eduardo — portfólio em HTML, CSS e JavaScript puros.", "color:#c4b5fd;font-weight:bold");
+}
 
-          <div class="tech">
-            ${p.tech.map(esc).join(" • ")}
-          </div>
-
-          <div class="actions">
-            ${btn("GitHub", p.github)}
-            ${btn("Demo", p.demo)}
-          </div>
-
-        </article>`
-      )
-      .join("");
+// Entrada discreta das seções ao rolar
+function initReveal() {
+  if (!("IntersectionObserver" in window)) return;
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .08 });
+  document.querySelectorAll("main section:not(#home)").forEach(x => { x.classList.add("reveal"); io.observe(x); });
 }
 
 
@@ -656,7 +405,7 @@ function renderEducation() {
     DATA.education
       .map(e =>
         `<article
-          class="card glass ${isPlaceholder(e.title) ? "placeholder" : ""}"
+          class="card glass"
         >
 
           <span class="kind">
@@ -787,5 +536,7 @@ function renderNav() {
   renderProjects,
   renderEducation,
   renderContact,
-  renderNav
+  renderNav,
+  initPokemon,
+  initReveal
 ].forEach(fn => fn());

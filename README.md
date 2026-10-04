@@ -53,3 +53,20 @@ LinkedIn: José Eduardo
 E-mail: joseidelfonsio123@gmail.com
 
 Desenvolvido por José Eduardo.
+
+---
+
+## Imagens e placeholders (adicionar depois)
+
+Se um arquivo não existir, o site continua funcionando (iniciais no lugar da foto, espaço reservado nos projetos, sprites ocultos).
+
+| O que | Onde colocar | Onde trocar o caminho |
+|---|---|---|
+| Foto de perfil | `assets/eu.jpg` | `DATA.avatar` |
+| Screenshots dos projetos | `assets/images/projects/` (`central-estudos.png`, `contaup.png`, `assistencia-tecnica.png`, `loja-games.png`, `portfolio.png`) | campo `image` de cada projeto |
+| Sprites / pixel art | `assets/images/pokemon/` (`sprite-home.png`, `sprite-skills.png`, `sprite-projects.png`, `sprite-contact.png`) | `DATA.pokemon.sprites` |
+| Pokébola (opcional) | `assets/images/pokemon/` | `DATA.pokemon.pokeball` (vazio = pokébola em CSS) |
+
+Tudo em `js/script.js`, objeto `DATA`. Campos de texto vazios (`""`) não aparecem no site.
+
+Easter eggs: pokébolas clicáveis, código Konami (↑ ↑ ↓ ↓ ← → ← → B A) e uma mensagem no console.

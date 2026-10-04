@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfólio</title>
-  <meta name="description" content="Portfólio de desenvolvedor">
+  <title>José Eduardo | Estudante de Sistemas de Informação</title>
+  <meta name="description" content="Portfólio de José Eduardo, estudante de Sistemas de Informação no IFCE. Python, SQL e projetos próprios.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,41 +20,46 @@
       <div class="hero-text">
         <h1 id="hero-name"></h1>
         <p class="role" id="hero-role"></p>
+        <p class="meta" id="hero-meta"></p>
         <p class="lead" id="hero-desc"></p>
         <div class="chips" id="hero-tech"></div>
         <div class="cta">
           <a class="btn primary" href="#projetos">Ver projetos</a>
-          <a class="btn" href="#contato">Entrar em contato</a>
+          <a class="btn" href="#sobre">Sobre mim</a>
+          <a class="btn" id="btn-github" href="#contato" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
-      <!-- Cartão de treinador compacto: avatar, level, XP e indicadores -->
-      <aside class="trainer glass" aria-label="Resumo">
-        <div class="t-top"><div class="avatar" id="avatar"></div>
-          <div><div class="t-name" id="t-name"></div><div class="t-level" id="t-level"></div></div></div>
-        <div class="xp"><i id="xp-fill"></i></div>
-        <dl class="stats" id="stats"></dl>
-      </aside>
+      <!-- PLACEHOLDER: FOTO DE PERFIL — defina o arquivo em DATA.avatar (js/script.js). Sem arquivo, aparecem suas iniciais. -->
+      <figure class="photo" id="avatar"></figure>
+      <!-- PLACEHOLDER: SPRITE POKEMON (home) — arquivo em assets/images/pokemon/sprite-home.png (caminho em DATA.pokemon.sprites). Sem arquivo, não aparece nada. -->
+      <div class="sprite" data-slot="home"></div>
     </section>
 
     <!-- 2. SOBRE -->
-    <section id="sobre"><h2>Sobre mim</h2><div class="about glass" id="about"></div></section>
+    <section id="sobre"><!-- PLACEHOLDER: POKEBOLA — troque em DATA.pokemon.pokeball (js/script.js); o texto ao clicar fica em DATA.pokemon.balls -->
+    <h2>Sobre mim<span class="ball-slot" data-ball="about"></span></h2><div class="about glass" id="about"></div></section>
     <!-- 3. HABILIDADES -->
     <section id="habilidades">
-      <h2>Skills</h2><p class="sub">Tecnologias e ferramentas, por categoria.</p>
+      <!-- PLACEHOLDER: SPRITE POKEMON (skills) — coloque o arquivo em assets/images/ e defina o caminho em DATA.pokemon.sprites.skills (js/script.js). Vazio = não aparece nada. -->
+    <div class="sprite" data-slot="skills"></div>
+      <h2>Tecnologias</h2><p class="sub">O que estudo e uso nos meus projetos.</p>
       <div class="tabs" id="tabs" role="tablist"></div>
       <div class="grid skills" id="skills"></div>
     </section>
     <!-- 4. EXPERIÊNCIA -->
     <section id="experiencia"><h2>Experiência</h2><ol class="timeline" id="timeline"></ol></section>
     <!-- 5. PROJETOS -->
-    <section id="projetos"><h2>Projetos</h2><p class="sub">O que já construí e o que está em andamento.</p><div class="grid projects" id="projects"></div></section>
+    <section id="projetos"><!-- PLACEHOLDER: SPRITE POKEMON (projects) — coloque o arquivo em assets/images/ e defina o caminho em DATA.pokemon.sprites.projects (js/script.js). Vazio = não aparece nada. -->
+    <div class="sprite" data-slot="projects"></div><h2>Projetos<span class="ball-slot" data-ball="projects"></span></h2><p class="sub">Projetos próprios que uso para praticar o que estudo.</p><div class="grid projects" id="projects"></div></section>
     <!-- 6. FORMAÇÃO -->
     <section id="formacao"><h2>Formação e certificações</h2><div class="grid edu" id="education"></div></section>
     <!-- 7. CONTATO -->
-    <section id="contato"><h2>Contato</h2><div class="grid contact" id="contact"></div></section>
+    <section id="contato"><!-- PLACEHOLDER: SPRITE POKEMON (contact) — coloque o arquivo em assets/images/ e defina o caminho em DATA.pokemon.sprites.contact (js/script.js). Vazio = não aparece nada. -->
+    <div class="sprite" data-slot="contact"></div><h2>Contato</h2><div class="grid contact" id="contact"></div></section>
   </main>
 
-  <footer id="footer"></footer>
+  <footer><span id="footer"></span><span class="ball-slot" data-ball="footer"></span></footer>
+  <div id="toast" role="status" aria-live="polite"></div>
   <script src="js/script.js"></script>
 </body>
 </html>
