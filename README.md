@@ -70,3 +70,7 @@ Se um arquivo não existir, o site continua funcionando (iniciais no lugar da fo
 Tudo em `js/script.js`, objeto `DATA`. Campos de texto vazios (`""`) não aparecem no site.
 
 Easter eggs: pokébolas clicáveis, código Konami (↑ ↑ ↓ ↓ ← → ← → B A) e uma mensagem no console.
+
+## Ícones
+
+As tecnologias usam [Devicon](https://devicon.dev) e os ícones genéricos (Excel, Word, e-mail etc.) usam Font Awesome, ambos por CDN no `index.html` (precisa de internet para aparecerem). Para trocar um ícone, edite o campo `icon` em `DATA.skills` ou `DATA.contact` com o nome da classe, por exemplo `"devicon-python-plain"`. Uma lista de classes mostra mais de um ícone no mesmo card.
