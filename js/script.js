@@ -129,66 +129,43 @@ const DATA = {
 
   /* ---- Projetos ---- */
 
-  projects: [
+projects: [
 
-    {
-      name: "Central Estudos",
-      status: "Em desenvolvimento",
-      desc: "Aplicativo desktop criado para organizar meus estudos da faculdade.",
-      tech: ["Python", "PySide6", "SQLite"],
-      featured: true,
-      note: "matérias, estudos, flashcards e organização acadêmica.",
-      image: "assets/images/projects/central-estudos.png",   // PLACEHOLDER: SCREENSHOT DO PROJETO (sem arquivo, aparece um espaço reservado)
-      github: "",   // PREENCHER: link do repositório
-      demo: ""      // PREENCHER: link da demonstração
-    },
+  {
+    name: "ContaUp",
+    status: "Projeto acadêmico",
+    desc: "Sistema de gestão financeira desenvolvido como projeto acadêmico para a disciplina de Algoritmos e Programação II.",
+    tech: ["Python", "Flask", "SQLite", "HTML", "CSS", "JavaScript"],
+    featured: true,
+    note: "controle de receitas, despesas, cartões, parcelas, gastos fixos, planejamento financeiro e relatórios.",
+    image: "assets/images/projects/contaup.png",
+    github: "https://github.com/Francis-bit-code/ContaUp",
+    demo: ""
+  },
 
-    {
-      name: "ContaUp",
-      status: "Projeto pessoal",
-      desc: "Aplicação de controle financeiro para registrar e organizar receitas e despesas.",
-      tech: ["Python", "SQLite"],
-      featured: false,
-      image: "assets/images/projects/contaup.png",   // PLACEHOLDER: SCREENSHOT DO PROJETO (sem arquivo, aparece um espaço reservado)
-      github: "",   // PREENCHER: link do repositório
-      demo: ""      // PREENCHER: link da demonstração
-    },
+  {
+    name: "Sistema de Assistência Técnica",
+    status: "Em desenvolvimento",
+    desc: "Sistema para gerenciar uma assistência técnica: clientes, equipamentos e serviços.",
+    tech: ["Python", "MariaDB"],
+    featured: false,
+    image: "assets/images/projects/assistencia-tecnica.png",
+    github: "",
+    demo: ""
+  },
 
-    {
-      name: "Sistema de Assistência Técnica",
-      status: "Em desenvolvimento",
-      desc: "Sistema para gerenciar uma assistência técnica: clientes, equipamentos e serviços.",
-      tech: ["Python", "MariaDB"],
-      featured: false,
-      image: "assets/images/projects/assistencia-tecnica.png",   // PLACEHOLDER: SCREENSHOT DO PROJETO (sem arquivo, aparece um espaço reservado)
-      github: "",   // PREENCHER: link do repositório
-      demo: ""      // PREENCHER: link da demonstração
-    },
+  {
+    name: "Loja de Games",
+    status: "Projeto pessoal",
+    desc: "Projeto web para praticar a estruturação e a estilização de páginas.",
+    tech: ["HTML", "CSS"],
+    featured: false,
+    image: "assets/images/projects/loja-games.png",
+    github: "",
+    demo: ""
+  }
 
-    {
-      name: "Loja de Games",
-      status: "Projeto pessoal",
-      desc: "Projeto web para praticar a estruturação e a estilização de páginas.",
-      tech: ["HTML", "CSS"],
-      featured: false,
-      image: "assets/images/projects/loja-games.png",   // PLACEHOLDER: SCREENSHOT DO PROJETO (sem arquivo, aparece um espaço reservado)
-      github: "",   // PREENCHER: link do repositório
-      demo: ""      // PREENCHER: link da demonstração
-    },
-
-    {
-      name: "Meu Portfólio",
-      status: "Publicado",
-      desc: "Este portfólio, feito para apresentar meus projetos e minha evolução na área de tecnologia.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      featured: false,
-      image: "assets/images/projects/portfolio.png",   // PLACEHOLDER: SCREENSHOT DO PROJETO (sem arquivo, aparece um espaço reservado)
-      github: "",   // PREENCHER: link do repositório
-      demo: ""      // PREENCHER: link da demonstração
-    },
-
-  ],
-
+],
 
   /* ---- Formação e certificações ---- */
 
