@@ -29,10 +29,10 @@ const DATA = {
 
   pokemon: {
     pokeball: "",      // PLACEHOLDER: POKEBOLA — ex.: "assets/images/pokebola.png" (vazio = pokébola desenhada em CSS)
-    sprites: {         // PLACEHOLDER: SPRITE POKEMON / PIXEL ART — salve com estes nomes (ou troque o caminho)
-      home: "assets/images/pokemon/sprite-home.png",
-      skills: "assets/images/pokemon/sprite-skills.png",
-      projects: "assets/images/pokemon/sprite-projects.png",
+    sprites: {
+      home: "assets/images/pokemon/gastly.png",
+      skills: "assets/images/pokemon/haunter.png",
+      projects: "assets/images/pokemon/gengar.png",
       contact: "assets/images/pokemon/sprite-contact.png"
     },
     balls: {           // texto que aparece ao clicar em cada pokébola (edite à vontade)
